@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDev</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/035c424fa6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kumbh +Sans: wght@400; 700&display=swap" rel="stylesheet"  />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">Montain Climbers</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__links"> HOME </a>
+            </li>
+            <li class="navbar__btn">
+              <a href="OrderPage.html" class="button"> Place Order </a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="me">
+      <div class="main__container">
+        <div class="main__content">
+          
+          <h2>Pricing</h2>
+          <p>We Charge $50 per rank jump!</p><br>
+          <p>So going from Bronze to Gold is $100!</p>
+        </div>
+<div class="xdxd" >
+      </div>
+      <div class="LBG">
+      <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4416299963923/ranked-infographic-league-of-legends-season-12.png" alt="Description of the image" width="800px" height="500" class="LeagueImage" id="image1"><br>
+      <button onclick="showPopup('PopupLeague')" class ="test">League</button>
+      <div id="PopupLeague" class="popup">
+      <h2>Enter Information</h2>
+      <input type="text" placeholder="Username"><br><br>
+      <input type="password" placeholder="Password"><br><br>
+      <input type="text" placeholder="Payment Info"><br><br>
+      <input type="text" placeholder="Contact Info"><br><br>
+      <input type="text" placeholder="Select Initial Rank"><br><br>
+          <h2>Select Desired Rank</h2>
+          <input type="radio" id="option1" name="rank" value="Bronze">
+          <label for="option1">Bronze</label><br>
+          <input type="radio" id="option2" name="rank" value="Silver">
+          <label for="option2">Silver</label><br>
+          <input type="radio" id="option3" name="rank" value="Gold">
+          <label for="option3">Gold</label><br>
+          <input type="radio" id="option4" name="rank" value="Platinum">
+          <label for="option4">Platinum</label><br>
+          <input type="radio" id="option5" name="rank" value="Diamond">
+          <label for="option5">Diamond</label><br>
+          <input type="radio" id="option6" name="rank" value="Master">
+          <label for="option6">Master</label><br>
+          <input type="radio" id="option7" name="rank" value="Grand Master">
+          <label for="option7">Grand Master</label><br>
+          <input type="radio" id="option8" name="rank" value="Challenger">
+          <label for="option8">Challenger</label><br><br>    
+          <button onclick="submitForm('PopupLeague')">Submit</button>
+          <button onclick="hidePopup('PopupLeague')">Close</button>
+    </div>
+</div>
+    
+  <div class="DBG">
+    <img src="https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F26695-e9f321f9c92dc6d7ece529c99be564e6.jpeg?auto=format%2Ccompress&dpr=1.0&w=1200" alt="Description of the image" width="800px" height="500" class="DotaImage" id="image1"><br>
+    <button onclick="showPopup('PopupDota')" class="test">Dota</button>
+    <div id="PopupDota" class="popup">
+      <h2>Enter Information</h2>
+      <input type="text" placeholder="Username"><br><br>
+      <input type="password" placeholder="Password"><br><br>
+      <input type="text" placeholder="Payment Info"><br><br>
+      <input type="text" placeholder="Contact Info"><br><br>
+      <input type="text" placeholder="Select Initial Rank"><br><br>
+      <input type="radio" id="option1" name="rank" value="Herald">
+      <label for="option1">Herald</label><br>
+      <input type="radio" id="option2" name="rank" value="Guardian">
+      <label for="option2">Guardian</label><br>
+      <input type="radio" id="option3" name="rank" value="Crusader">
+      <label for="option3">Crusader</label><br>
+      <input type="radio" id="option4" name="rank" value="Archon">
+      <label for="option4">Archon</label><br>
+      <input type="radio" id="option5" name="rank" value="Legend">
+      <label for="option5">Legend</label><br>
+      <input type="radio" id="option6" name="rank" value="Ancient">
+      <label for="option6">Ancient</label><br>
+      <input type="radio" id="option7" name="rank" value="Divine">
+      <label for="option7">Divine</label><br>
+      <input type="radio" id="option8" name="rank" value="Immortal">
+      <label for="option8">Immortal</label><br><br>
+      <button onclick="submitForm('PopupDota')">Submit</button>
+      <button onclick="hidePopup('PopupDota')">Close</button>
+    </div>
+  </div class="DBG">
+  
+    <div class="CBG">
+        <img src="https://preview.redd.it/0e9yx18u1d331.png?auto=webp&s=97e702d3f87316425921a2ab481e04e7aaef29f9" alt="Description of the image" width="800px" height="500" class="CSGOImage" id="image1"><br>
+    <button onclick="showPopup('PopupCSGO')" class="test">CS:GO</button>
+    <div id="PopupCSGO" class="popup">
+      <h2>Enter Information</h2>
+      <input type="text" placeholder="Username"><br><br>
+      <input type="password" placeholder="Password"><br><br>
+      <input type="text" placeholder="Payment Info"><br><br>
+      <input type="text" placeholder="Contact Info"><br><br>
+      <input type="text" placeholder="Select Initial Rank"><br><br>
+      <h2>Select Desired  Rank</h2>
+      <input type="radio" id="option1" name="rank" value="Level 1">
+      <label for="option1">Level 1</label><br>
+      <input type="radio" id="option2" name="rank" value="Level 2">
+      <label for="option2">Level 2</label><br>
+      <input type="radio" id="option3" name="rank" value="Level 3">
+      <label for="option3">Level 3</label><br>
+      <input type="radio" id="option4" name="rank" value="Level 4">
+      <label for="option4">Level 4</label><br>
+      <input type="radio" id="option5" name="rank" value="Level 5">
+      <label for="option5">Level 5</label><br>
+      <input type="radio" id="option6" name="rank" value="Level 6">
+      <label for="option6">Level 6</label><br>
+      <input type="radio" id="option7" name="rank" value="Level 7">
+      <label for="option7">Level 7</label><br>
+      <input type="radio" id="option8" name="rank" value="Level 8">
+      <label for="option8">Level 8 </label><br>
+      <input type="radio" id="option9" name="rank" value="Level 9">
+      <label for="option9">Level 9</label><br>
+      <input type="radio" id="option10" name="rank" value="Level 10">
+      <label for="option10">Level 10 </label><br><br>
+      <button onclick="submitForm('PopupCSGO')">Submit</button>
+      <button onclick="hidePopup('PopupCSGO')">Close</button>
+    </div>
+</div class="CBG">
+
+<div class="VBG">
+    <img src="https://support-valorant.riotgames.com/hc/article_attachments/7069133688083/basic_ranked_infographic.png" width="800px" height="500" class="ValImage" id="image1"><br>
+    <button onclick="showPopup('PopupValorant')" class ="test">Valorant</button>
+      <div id="PopupValorant" class="popup">
+      <h2>Enter Information</h2>
+      <input type="text" placeholder="Username"><br><br>
+      <input type="password" placeholder="Password"><br><br>
+      <input type="text" placeholder="Payment Info"><br><br>
+      <input type="text" placeholder="Contact Info"><br><br>
+      <input type="text" placeholder="Select Initial Rank"><br><br>
+        
+          <h2>Select Desired Rank</h2>
+          <input type="radio" id="option1" name="rank" value="Bronze">
+          <label for="option1">Bronze</label><br>
+          <input type="radio" id="option2" name="rank" value="Silver">
+          <label for="option2">Silver</label><br>
+          <input type="radio" id="option3" name="rank" value="Gold">
+          <label for="option3">Gold</label><br>
+          <input type="radio" id="option4" name="rank" value="Platinum">
+          <label for="option4">Platinum</label><br>
+          <input type="radio" id="option5" name="rank" value="Diamond">
+          <label for="option5">Diamond</label><br>
+          <input type="radio" id="option6" name="rank" value="Ascendant">
+          <label for="option6">Ascendant</label><br>
+          <input type="radio" id="option7" name="rank" value="Immortal">
+          <label for="option7">Immortal</label><br>
+          <input type="radio" id="option8" name="rank" value="Radiant">
+          <label for="option8">Radiant</label><br><br>    
+          <button onclick="submitForm('PopupValorant')">Submit</button>
+          <button onclick="hidePopup('PopupValorant')">Close</button>
+    </div>
+    </div class="VBG">
+</div>
+
+  <script>
+    function showPopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "block";
+    }
+
+    function hidePopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "none";
+    }
+
+    function submitForm(popupId) {
+  var name = document.querySelector("#" + popupId + " input[placeholder='Username']").value;
+  var password = document.querySelector("#" + popupId + " input[placeholder='Password']").value;
+  var rank = document.querySelector("#" + popupId + " input[type='radio']:checked").value;
+  var rankIn = document.querySelector("#" + popupId + " input[placeholder='Select Initial Rank']").value;
+  var contact = document.querySelector("#" + popupId + " input[placeholder='Contact Info']").value;
+  var payment = document.querySelector("#" + popupId + " input[placeholder='Payment Info']").value;
+ 
+  console.log("Name:", name);
+  console.log("Password:", password);
+  console.log("Selected Rank:", rank);
+  console.log("Selected Initial Rank:", rankIn);
+  console.log("Contact Info:", contact);
+  console.log("Payment Info:", payment);
+ 
+  var message = "Order Has Been Placed!" + "\nUsername: " + name + "\nPassword: " + password + "\nContact Info: " + contact + "\nPayment Info: " + payment +"\nInitial Rank: " + rankIn + "\nDesired Rank: " + rank ;
+  alert(message);
+
+  hidePopup(popupId);
+}
+  </script>
+
+
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__links--wrapper">
+          <div class="footer__links--items">
+            <h2>Find Me Here</h2>
+            <a href="https://www.facebook.com/k4kurse">Facebook</a>
+            <a href="https://twitter.com/NF_Kurse">Twitter</a>
+            <a href="https://www.instagram.com/k4kurse/">Instagram</a> 
+          </div>
+          <div class="footer__links--items">
+            <h2>Find Me Here</h2>
+            <a href="https://www.facebook.com/k4kurse">Facebook</a>
+            <a href="https://twitter.com/NF_Kurse">Twitter</a>
+            <a href="https://www.instagram.com/k4kurse/">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"></a>
+          </div>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/k4kurse" class="social__icons--links" target="_blanks">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <div class="social__icons">
+              <a href="https://twitter.com/NF_Kurse" class="social__icons--links" target="_blanks">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <div class="social__icons">
+                <a href="https://www.instagram.com/k4kurse/" class="social__icons--links" target="_blanks">
+                  <i class="fab fa-instagram"></i>
+                </a>
+               
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
